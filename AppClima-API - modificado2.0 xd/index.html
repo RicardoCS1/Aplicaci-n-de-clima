@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador del Clima</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./custom.js" defer></script>
+</head>
+<body>
+    <section class="weather-content">
+        <h1>Buscador del Clima</h1>
+        <div class="result">
+            <p>Agregue ciudad y país para ver el clima</p>
+        </div>
+        <form action="" method="POST" class="get-weather">
+            <select id="country" required>
+                <option disabled selected value="">Seleccione el país</option>
+                <option value="AR">Argentina</option>
+                <option value="CO">Colombia</option>
+                <option value="CR">Costa Rica</option>
+                <option value="ES">España</option>
+                <option value="US">Estados Unidos</option>
+                <option value="MX">México</option>
+                <option value="PE">Perú</option>
+                <option value="BR">Brasil</option>
+                <option value="CL">Chile</option>
+                <option value="JP">Japón</option>
+                <option value="IN">India</option> <!-- Added India -->
+                <option value="IT">Italia</option> <!-- Added Italy -->
+                <option value="FR">Francia</option> <!-- Added France -->
+                <option value="DE">Alemania</option> <!-- Added Germany -->
+            </select>
+            <select id="city" required>
+                <option disabled selected value="">Seleccione la ciudad</option>
+            </select>
+            <input type="submit" value="Obtener Clima">
+        </form>
+        <button id="get-location">📍 Usar Ubicación Actual</button>
+        <div id="location-info"></div>
+    </section>
+</body>
+</html>
+

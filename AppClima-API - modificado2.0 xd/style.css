@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #87CEEB; /* Fondo celeste */
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    transition: background 0.3s ease; /* Smooth background transition */
+}
+
+.weather-content {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9); /* Fondo negro */
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.weather-content h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+select, input[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+select {
+    background-color: #fff;
+    color: #333;
+}
+
+input[type="submit"] {
+    background: #14d4a5;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #10a688;
+}
+
+#get-location {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: #1e88e5;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#get-location:hover {
+    background-color: #1565c0;
+    transform: scale(1.02);
+}
+
+#get-location:active {
+    transform: scale(0.98);
+}
+
+
+.result {
+    margin-top: 20px;
+}
+
+.alert-message {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Add styles for the background images of new countries */
+body {
+    background-image: url('./images/argentina.jpg'); /* default background */
+}
+
+/* Add transitions for background image change */
+body {
+    transition: background-image 1s ease-in-out;
+}
